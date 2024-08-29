@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calc-area">
+            <div class="result">
+                <input type="text" name="answer" id="input" readonly>
+                <div id="operation"></div>
+            </div>
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="clear" id="clear">AC</button>
+                <button onclick="appendCharacter('+/-')" id="+-">+/-</button>
+                <button onclick="appendCharacter('%')" id="%">%</button>
+                <button onclick="appendCharacter('/')" class="operator" id="/">÷</button>
+                <button onclick="appendCharacter('7')" id="7">7</button>
+                <button onclick="appendCharacter('8')" id="8">8</button>
+                <button onclick="appendCharacter('9')" id="9">9</button>
+                <button onclick="appendCharacter('*')" class="operator" id="*">*</button>
+                <button onclick="appendCharacter('4')" id="4">4</button>
+                <button onclick="appendCharacter('5')" id="5">5</button>
+                <button onclick="appendCharacter('6')" id="6">6</button>
+                <button onclick="appendCharacter('-')" class="operator" id="-">-</button>
+                <button onclick="appendCharacter('1')" id="1">1</button>
+                <button onclick="appendCharacter('2')" id="2">2</button>
+                <button onclick="appendCharacter('3')" id="3">3</button>
+                <button onclick="appendCharacter('+')" class="operator" id="+">+</button>
+                <button onclick="appendCharacter('0')" class="z" id="0">0</button>
+                <button onclick="appendCharacter('.')" id=".">.</button>
+                <button onclick="calculateResult()" class="equals" id="=">=</button>
+               
+            </div>
+            <!-- Дополнительные кнопки, скрытые по умолчанию -->
+          
+        </div>
+    </div>
+</body>
+</html>
